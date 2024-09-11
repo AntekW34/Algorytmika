@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <title>Algorytm Kruskala</title>
+    <meta charset='utf-8'>
+    <style>
+    *{margin: 0px;}
+    div{
+        float: right;
+        width: 40%;
+        background-color: aliceblue;
+        height: 100%;
+        padding: 30px;
+    }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="512" height="512"></canvas>
+<div>
+    <h1>Minimalne Drzewo Rozpinające</h1>
+    <h2>Według algorytmu Kruskala</h2>
+    <br>
+    <hr>
+    <br>
+    <p>Pokazany na canvasie obraz jest wynikiem działania algorytmu Kruskala na graf powstały z połączenia każdego punktu z każdym innym, a wagami krawędzi są odległośći jednego punktu od drugiego.</p>
+    <br>
+    <hr>
+    <br>
+    <h3>Czym jest Minimalne Drzewo Rozpinające?</h3>
+    <p>Minimalne drzewo rozpinające jest to drzewo o najmniejszej sumie wag krawędzi z grafu, którego jest podzbiorem.</p>
+    <br>
+    <hr>
+    <br>
+    <h3>Zasada działania algorytmu</h3>
+    <p>
+        Cytując z <a href="https://pl.wikipedia.org/wiki/Algorytm_Kruskala">wiki</a>:
+        <ul>
+            <li>Utwórz las L z wierzchołków oryginalnego grafu – każdy wierzchołek jest na początku osobnym drzewem.</li>
+            <li>Utwórz zbiór S zawierający wszystkie krawędzie oryginalnego grafu.</li>
+            <li>Dopóki S nie jest pusty oraz L nie jest jeszcze drzewem rozpinającym:
+                <ul>
+                <li>Wybierz i usuń z S jedną z krawędzi o minimalnej wadze.</li>
+                <li>Jeśli krawędź ta łączyła dwa różne drzewa, to dodaj ją do lasu L, tak aby połączyła dwa odpowiadające drzewa w jedno.</li>
+                <li>W przeciwnym wypadku odrzuć ją.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <br><hr><br>
+    <a href="Algorytm Kruskala.js">Kliknij tutaj aby zobaczyć kod</a>
+</div>
+<script src="Algorytm Kruskala.js"></script>
+</body>
+</html>
+
